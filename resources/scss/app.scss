@@ -1,1 +1,37 @@
 @import "~bootstrap/scss/bootstrap";
+body{
+    background-color: #73B0CD;
+}
+
+div.card-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    article{
+    margin: 2rem;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    align-items: center;
+    height: 400px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 3rem;
+
+    h1{
+        color: #3d7c98;
+    }
+    h2{
+        color: black;
+    }
+}
+}
+
+
+
+h1{
+    text-align: center;
+    color: #F5F5F5;
+}
