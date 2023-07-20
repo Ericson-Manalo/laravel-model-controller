@@ -1,23 +1,36 @@
 @extends('layouts.app')
 
 
-@section('title', 'Checking if it works!')
+@section('title', 'Movies!')
 
 
 @section('main-content')
 @dump($movies)
-    <h1>
-        Congratulation, it works!
-    </h1>
+<h1>
+    Movies
+</h1>
 
-    <div>
-        @foreach($movies as $movie)
-            <article>
-                <img src="" alt="">
-                <h1>
-                    {{ $movie->title }}
-                </h1>
-            </article>
-        @endforeach
-    </div>
+<div class="main-container">
+        <div class="card-container flex">
+            @foreach($movies as $movie)
+                <article>
+                    <h1>
+                        {{$movie->id}}
+                    </h1>
+                    <h2>
+                        {{ $movie->title }}
+                    </h2>
+                    <h4>
+                        {{$movie->original_title}} - {{$movie->nationality}}
+                    </h4>
+                    <p>
+                        {{$movie->date}} 
+                    </p>
+                    <p>
+                        {{$movie->vote}}
+                    </p>
+                </article>
+            @endforeach
+        </div>
+</div>
 @endsection
