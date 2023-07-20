@@ -5,6 +5,7 @@
 
 
 @section('main-content')
+@dd($movies)
     <h1>
         Congratulation, it works!
     </h1>
