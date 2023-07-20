@@ -8,12 +8,14 @@
 </head>
 <body>
 
+    @include('partials.header')
+
     <main>
         @yield('main-content')
     </main>
 
 
-
+    @include('partials.footer')
     @vite('resources/js/app.js')
 </body>
 </html>
